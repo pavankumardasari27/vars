@@ -1,3 +1,5 @@
+// vars/env/EnvUtils.groovy
+
 package com.te.utils
 
 class EnvUtils {
@@ -7,11 +9,10 @@ class EnvUtils {
   }
 
   def getEnvVariable(key) {
-    sh(script: "echo \$${key}", returnStdout: true).trim() 
+    sh(script: "echo \$${key}", returnStdout: true).trim()
   }
 
   def setEnvVariable(key, value) {
     sh "export ${key}=${value}"
   }
-
 }
