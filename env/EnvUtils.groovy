@@ -1,4 +1,4 @@
-package com.mycompany.utils
+package com.te.utils
 
 class EnvUtils {
 
